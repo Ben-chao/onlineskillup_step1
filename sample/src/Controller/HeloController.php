@@ -1,0 +1,23 @@
+<html>
+<head><title></title></head>
+<body>
+    
+<?php
+namespace App\Controller;
+ 
+use App\Controller\AppController;
+ 
+class HeloController extends AppController
+{
+    public function index()
+    {
+        $this->autoRender = false;
+        echo "<html><head></head><body>";
+        echo "<h1>Hello!</h1>";
+        echo "<p>これは、サンプルで作成したページです。</p>";
+        echo "</body></html>";
+    }
+}
+?>
+</body>
+</html>
